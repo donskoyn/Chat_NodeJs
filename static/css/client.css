@@ -1,0 +1,32 @@
+#registrationForm{
+    margin: 0 auto;
+}
+
+.control{
+    margin: 0 auto;
+    width: 300px;
+}
+#welcomeChat{
+    text-align: center;
+}
+.inputText{
+    padding: .375rem .75rem;
+    margin: 0 0 20px 0;
+    height: calc(2.25rem + 2px);
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color;
+    width: 100%;
+}
+
+
+.btnRegistration {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    border-radius: 3px;
+    padding: 10px;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}

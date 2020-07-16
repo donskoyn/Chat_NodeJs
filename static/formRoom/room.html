@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href='../css/style.css'>
+    <link rel="stylesheet" href='../css/room.css'>
+    <title>Chat App</title>
+</head>
+<body>
+<div class="container">
+    <div class="text-center">
+        <h2>JS Chat</h2>
+        <div id="userInfo"></div>
+    </div>
+    <div class="messages">
+        <h3 class="nameMasses">Message to room name : <span id="roomName"></span></h3>
+        <div id="all_mess"></div>
+    </div>
+    <div class="control">
+        <h3>Message</h3>
+        <form id="messForm">
+            <textarea name="message" id="message" class="form-control" placeholder="Write message"></textarea>
+            <input type="submit" value="Send" class="btnMessage">
+        </form>
+
+    </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="formRoom/room.js" type="text/javascript"></script>
+</body>
+</html>

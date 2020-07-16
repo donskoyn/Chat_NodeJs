@@ -1,0 +1,77 @@
+.nameMasseg{
+    margin: 10px;
+}
+#all_mess {
+    width: 100%;
+    height: 45vh;
+    margin: 0 auto;
+    overflow: auto;
+}
+.alert{
+    margin: 7px;
+    border-radius: 1.5vh;
+    column-width:900px;
+    padding: 15px;
+    text-align: left;
+    word-wrap: normal;
+
+}
+.textMess{
+    padding: 10px;
+    overflow:hidden;
+    text-overflow: clip
+}
+.nameUser{
+    height: 100%;
+    margin-left: -10px;
+    margin-right: 10px;
+    float: left;
+    background: steelblue;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color
+}
+
+.btnMessage {
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 10px;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.alert-secondary{
+    background: tomato;
+}
+.alert-danger{
+    background: aqua;
+}
+.alert-success{
+    background: cadetblue;
+}
+.alert-warning{
+    background: yellow;
+}
+.alert-info{
+    background: darkslategray;
+}
+.alert-light{
+    background: lightgreen;
+}
