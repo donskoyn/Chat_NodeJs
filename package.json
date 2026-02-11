@@ -1,20 +1,19 @@
 {
-  "name": "Chat_NodeJs",
+  "name": "chat-nodejs-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "express": "^4.22.1",
-    "socket.io": "^4.8.3",
-    "@babel/core": "^7.29.0",
-    "@babel/plugin-proposal-export-default-from": "^7.27.1",
-    "@babel/preset-env": "^7.29.0"
-  },
+  "description": "Real-time Chat Application - Monorepo Structure",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "npm start --workspace=server",
+    "dev": "npm start --workspace=server",
+    "client": "npm run dev --workspace=client",
+    "install-all": "npm install && npm --workspace=server install && npm --workspace=client install"
   },
-  "keywords": [],
+  "keywords": ["chat", "monorepo", "socket.io"],
   "author": "",
   "license": "ISC"
 }
