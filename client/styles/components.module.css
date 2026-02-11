@@ -1,0 +1,148 @@
+.messageForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.textarea {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 100px;
+  max-height: 200px;
+  transition: border-color 0.3s ease;
+}
+
+.textarea:hover {
+  border-color: #667eea;
+}
+
+.textarea:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  outline: none;
+}
+
+.textarea:disabled {
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-self: flex-end;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Message display */
+.message {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 12px;
+  word-break: break-word;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.messageName {
+  font-weight: 700;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  background: steelblue;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.messageText {
+  flex: 1;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* Color variants for messages */
+.alertSecondary {
+  background-color: #ff6347;
+  color: white;
+}
+
+.alertDanger {
+  background-color: #00bfff;
+  color: #000;
+}
+
+.alertSuccess {
+  background-color: #5f9ea0;
+  color: white;
+}
+
+.alertWarning {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.alertInfo {
+  background-color: #2f4f4f;
+  color: white;
+}
+
+.alertLight {
+  background-color: #90ee90;
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  .message {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .messageName {
+    flex: 1 0 100%;
+  }
+
+  .messageText {
+    flex: 1 0 100%;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
